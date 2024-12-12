@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Toko Rejeki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link rel="stylesheet" href="/css/fakeLoader.css">
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .lokasi{
+            mix-blend-mode: multiply;
+        }
+        .icon{
+            display: flex;
+            margin-top: auto;
+        }
+        .icon::after{
+            content:"082221784150";
+            font-size: 15px;
+            margin: 15px 0 0 10px;
+        }
+        .lokasi{
+            display: flex;
+        }
+        .gambar{
+            height: 250px;
+            width: 1000px;
+        }
+        body{
+            background:url(smea.PNG)no-repeat ;
+            background-size: cover;
+        }
+        .p-8 {
+            display: flex;
+            column-gap: 45px;
+            background-color: #ffffff42;
+        }
+    </style>
+</head>
+<header>
+<body class="bg-cover bg-center" style="background-image: url(metsu.jpeg);">
+    <div class="bg-red-700 text-white py-2 px-4">
+        <nav class="flex justify-between">
+            <div class="flex space-x-4">
+                <a href="Homepage.html" class="hover:underline"><img src="homebg.png" width="30px" height="50px" mix-blend-mode="multiply"></a>
+                <a href="tentang.html" class="hover:underline">Tentang</a>
+                <a href="lokasi.html" class="hover:underline">Lokasi</a>
+                <a href="produk.html" class="hover:underline">Produk</a>
+                <div style="position: absolute; top: 8px; left: 900px;">
+                    <a href="login web.html">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="p-8">
+    <div class="text">
+        <h1>NAMA KELOMPOK : </h1>
+        <ol type="1">
+            <li>Arya Dama Salimna</li>
+            <li>Matthew Lavonne Raphael</li>
+            <li>M. Fathurrohman</li>
+            <li>Valleno Adi Syahputra</li>
+        </ol>
+        <br><br>
+        <p>"Website ini dibuat oleh sekelompok siswa dari SMKN 02 PEKALONGAN yang memiliki minat dalam teknologi dan desain.
+             Mereka bekerja sama dalam proyek ini untuk menampilkan hasil karya seni, dan, kreatifan. Dengan menggunakan berbagai alat dan platform,
+              para siswa belajar tentang pengembangan web, kolaborasi, dan komunikasi yang efektif, serta berkomitmen untuk berbagi informasi yang bermanfaat dan inspiratif dengan teman-teman dan masyarakat luas."</p>
+    </div>
+            <div class="gambar">
+                <img src="smea.PNG">
+            </div>
+</div>
+    <div class="fakeLoader"></div>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/fakeLoader.js"></script>
+
+    <script>
+    $(document).ready(function () {
+        $.fakeLoader({
+            bgColor: '#338dff',
+            spinner:"spinner5"
+        });
+    });
+    </script>
+</body>
+</html>

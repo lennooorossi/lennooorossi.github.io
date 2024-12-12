@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Toko Rejeki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link rel="stylesheet" href="/css/fakeLoader.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .lokasi{
+            mix-blend-mode: multiply;
+        }
+        .icon{
+            display: flex;
+            margin-top: auto;
+        }
+        .icon::after{
+            content: " 0822-2178-4150";
+            font-size: 15px;
+            margin: 15px 0 0 10px;
+        }
+        .lokasi{
+            display: flex;
+        }
+    </style>
+</head>
+<header>
+<body class="bg-cover bg-center" style="background-image: url(toko.jpg);">
+    <div class="bg-red-700 text-white py-2 px-4">
+        <nav class="flex justify-between">
+            <div class="flex space-x-4">
+                <a href="Homepage.html" class="hover:underline"><img src="homebg.png" width="30px" height="50px" mix-blend-mode= "multiply"></a>
+                <a href="tentang.html" class="hover:underline">Tentang</a>
+                <a href="lokasi.html" class="hover:underline">Lokasi</a>
+                <a href="produk.html" class="hover:underline">Produk</a>
+                <div style="position: absolute; top: 8px; left: 900px;">
+                    <a href="login web.html">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="container mx-auto mt-10 px-4">
+        <h1 class="text-4xl font-bold text-red-700">TOKO</h1>
+        <h2 class="text-6xl font-bold text-red-700">REJEKI</h2>
+        <p class="text-lg text-black mt-4">Kami menyediakan berbagai macam kebutuhan pokok dengan harga terjangkau dan kualitas terbaik.</p>
+        <div class="icon">
+            <img src="wa.jpg" width="50px" height="44.5px"/>
+        </div>
+        <div class="lokasi">
+            <img src="lokasi.png" width="175px" height="44.5px"/>
+        </div>
+        <p class="text-black mt-6">TOKO BERAS REJEKI adalah toko yang menyediakan berbagai macam produk beras seperti beras ketan, beras rojo lele, beras dua ikan mas, beras semar dan lain sebagainya, tidak hanya menyediakan beras kami juga menyediakan kacang hijau import. 
+            Kami menyediakan beras berkualitas dengan harga yang terjangkau untuk memenuhi kebutuhan anda.  </p>
+        <p class="text-black mt-6">Kami memahami bahwa kualitas bahan pangan sangat penting bagi anda, oleh karna itu 
+             kami hanya menyediakan produk-produk berkualitas tinggi dari produsen terpecaya.
+             Dalam mrnjaga kualitas produk, kami memastikan bahwa produk-produk kami selalu tersimpan dengan baik dalam kondisi yang optimal.
+             Kami menawarkan pengiriman produk ke berbagai daerah di indonesia dengan harga yang terjangkau.</p>
+    </div>
+    <div class="fakeLoader"></div>
+    
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/js/fakeLoader.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $.fakeLoader({
+                    bgColor: '#338dff',
+                    spinner:"spinner5"
+                });
+            });
+            
+        </script>
+</body>
+</html>

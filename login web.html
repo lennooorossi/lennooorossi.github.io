@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN WEB</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="/css/fakeLoader.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login">
+      <form action="Homepage.html">  
+        <h1>Login</h1>
+        <hr>
+        <br>
+        <p>TOKO BERAS REJEKI</p>
+        <label for="">email</label>
+        <input type="text" placeholder="example@gmail.com">
+        <label for="">Password</label>
+        <input id="input_password" type="password" placeholder="password">
+        <div class="pw">
+          <label for="show_password">
+              <input type="checkbox" id="show_password">
+              tampilkan password
+          </label>
+        </div>
+        <button>Login</button>
+        <p>
+          don't have account ? <a href="blmpnyakun.html">sign in</a>
+        </p>
+      </form>
+    </div>
+       <div class="right">
+            <img class="gambar"src="beras.png" width="300px">
+       </div>
+  </div>
+  <div class="fakeLoader"></div>
+  <script>
+    const inputpassword = document.getElementById("input_password");
+    const showpassword = document.getElementById("show_password");
+
+    showpassword.addEventListener("input", (e) => {
+      if(e.target.checked) {
+        inputpassword.setAttribute("type", "text")
+      }else{
+        inputpassword.setAttribute("type", "password")
+      }
+    })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="/js/fakeLoader.js"></script>
+      <script>
+          $(document).ready(function () {
+              $.fakeLoader({
+                  bgColor: '#338dff',
+                  spinner:"spinner5"
+              });
+          });
+      </script>
+</body>
+</html>

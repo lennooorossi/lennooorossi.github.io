@@ -1,0 +1,198 @@
+<html>
+<head>
+    <title>Produk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link rel="stylesheet" href="/css/fakeLoader.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .lokasi{
+            mix-blend-mode: multiply;
+        }
+        .icon{
+            display: flex;
+            margin-top: auto;
+        }
+        .icon::after{
+            content:"082221784150";
+            font-size: 15px;
+            margin: 15px 0 0 10px;
+        }
+        .lokasi{
+            display: flex;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .navbar a:hover{
+            text-decoration: underline;
+        }
+        .navbar .logo{
+            font-size: 24px;
+        }
+        .content {
+            background-image: url(toko.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 10px 10px 10px #0a0ac3;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product p {
+            margin: 10px 0;
+        }
+        .product button {
+            background: rgb(9, 32, 149);
+            width: 200px;
+            border-radius: 20px;
+            height: 25px;
+        }
+        .nav {
+            text-align: left;
+            position: relative;
+        }
+        div {
+            text-align: left
+        }
+        button{
+            color: red;
+        }
+  </style>
+ </head>
+ <body>
+</head>
+<header>
+<body class="bg-cover bg-center" style="background-image: url(gambar/bg.jfif);">
+    <div class="bg-red-700 text-white py-2 px-4">
+        <nav class="flex justify-between">
+            <div class="flex space-x-4">
+                <a href="Homepage.html" class="hover:underline"><img src="homebg.png" width="30px" height="50px" mix-blend-mode="multiply"></a>
+                <a href="tentang.html" class="hover:underline">Tentang</a>
+                <a href="lokasi.html" class="hover:underline">Lokasi</a>
+                <a href="produk.html" class="hover:underline">Produk</a>
+                <div style="position: absolute; top: 8px; left: 900px;">
+                    <a href="login web.html">Login</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <div class="logo">
+   </div>
+  <div class="content">
+   <div class="product-grid">
+    <div class="product">
+     <img alt="Beras Cap Rojo Lele 5KG" height="200" src="rojolele.jpg" width="200"/>
+     <p>
+      BERAS CAP ROJO LELE 5KG
+     </p>
+     <p>
+      Rp 80.000
+     </p>
+     <a href="keranjang.html">
+        <button>Tambahkan ke keranjang</button>
+     </a>
+    </div>
+    <div class="product">
+     <img alt="Beras Semar 5KG" height="200" src="semar.jpg" width="200"/>
+     <p>
+      BERAS SEMAR 5KG
+     </p>
+     <p>
+      Rp 72.000
+     </p>
+     <a href="keranjang.html">
+     <button>Tambahkan ke keranjang</button>
+     </a>
+    </div>
+    <div class="product">
+     <img alt="Kacang Hijau Import" height="200" src="kacanghijau.jpg" width="200"/>
+     <p>
+      KACANG HIJAU IMPORT
+     </p>
+     <p>
+      Rp 25.000/Kg
+     </p>
+     <a href="keranjang.html">
+     <button>Tambahkan ke keranjang</button>
+     </a>
+    </div>
+    <div class="product">
+     <img alt="Ketan Cap Singkong" height="200" src="ketan.jpg" width="200"/>
+     <p>
+      BERAS KETAN 
+     </p>
+     <p>
+      Rp 18.000/Kg
+     </p>
+     <a href="keranjang.html">
+     <button>Tambahkan ke keranjang</button>
+     </a>
+    </div>
+    <div class="product">
+     <img alt="Beras Cap Dua Ikan 5KG" height="200" src="duaikan.jpg" width="200"/>
+     <p>
+      BERAS CAP DUA IKAN 5KG
+     </p>
+     <p>
+      Rp 72.000
+     </p>
+     <a href="keranjang.html">
+     <button>Tambahkan ke keranjang</button>
+     </a>
+    </div>
+    <div class="product">
+     <img alt="Beras" src="beras eceran1.jpg" style="height: 312px; width: 250px;"/>
+     <p>
+      BERAS ECER
+     </p>
+     <p>
+      Rp 14.000/KG
+     </p>
+     <a href="keranjang.html">
+     <button type="button">Tambahkan ke keranjang</button>
+     </a>
+    </div>
+    </div>
+   </div>
+  </div>
+        <div class="fakeLoader"></div>
+            
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/js/fakeLoader.js"></script>
+
+        <script>
+        $(document).ready(function () {
+            $.fakeLoader({
+                bgColor: '#338dff',
+                spinner:"spinner5"
+            });
+        });
+        </script>
+ </body>
+</html>

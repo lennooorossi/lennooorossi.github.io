@@ -1,0 +1,46 @@
+header {
+    width: 800px;
+    height: 150px;
+    margin: 0 auto;
+   background-color:rgb(179, 229, 223);
+
+}
+main{
+    width: 600px;
+    /* margin: 0 auto; */
+        background-color: rgb(179, 229, 223);
+}
+
+.utama{
+    display: flex;
+    justify-content: center;
+}
+.saya{
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+nav{
+    width: 800px;
+    margin: 0 auto;
+    
+}
+
+nav a{
+    padding: 5px;
+    color: rgb(22, 5, 39);
+    background-color:whitesmoke;
+    text-decoration: none;
+}
+
+nav a :hover{
+    background-color:purple;
+    color: blue;
+}
+
+.about{
+    width: 800px;
+}
+
+p{
+    padding-left: 10px;
+}

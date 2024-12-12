@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buat akun</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+      <div class="right">
+           <img class="gambar"src="/brslgn-removebg-preview.png" width ="300px">
+      </div>
+    <div class="login">
+      <form action="login web.html">
+        <h1>create account</h1>
+        <hr>
+        <br>
+        <p>TOKO BERAS REJEKI</p>
+        <label for="">Email</label>
+        <input type="text" placeholder="example@gmail.com">
+        <label for="">Username</label>
+        <input type="Username" placeholder="Username">
+        <label for="">Password</label>
+        <input type="password" placeholder="password">
+        <label for="">Confirm Password</label>
+        <input id="input_password" type="password" placeholder="password">
+        <div class="pw">
+          <label for="show_password">
+              <input type="checkbox" id="show_password">
+              tampilkan password
+          </label>
+        </div>
+        <button>sign in</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    const inputpassword = document.getElementById("input_password");
+    const showpassword = document.getElementById("show_password");
+
+    showpassword.addEventListener("input", (e) => {
+      if(e.target.checked) {
+        inputpassword.setAttribute("type", "text")
+      }else{
+        inputpassword.setAttribute("type", "password")
+      }
+    })
+</script>
+</body>
+</html>
